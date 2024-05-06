@@ -64,8 +64,8 @@ export default function Home() {
         <hr/>
 
         {/* Referans işlemleri formu */}
-        <form ref={formRef} className="flex flex-col gap-6 flex-wrap" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
-          <div className="flex flex-row">
+        <form ref={formRef} className="flex flex-col gap-6" onSubmit={handleSubmit(onSubmit)} autoComplete="off">
+          <div className="flex flex-row flex-wrap">
             <div className="flex p-4 basis-full md:basis-1/2">
 
               {/* Ad-Soyad input */}
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row flex-wrap">
             <div className="flex p-4 basis-full md:basis-1/2">
 
               {/* Telefon input */}
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <hr/>
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex flex-col md:flex-row items-center gap-2">
             <button className="buttonDestructive" type="button" onClick={deleteReference}>
               <IoTrashBinOutline className="text-xl"/>
               Referansı Sil
