@@ -53,6 +53,8 @@ export default function Home() {
       setValue('phone', selectedReference.phone)
       setValue('reference', selectedReference.reference)
     }
+
+    console.log('selected', selectedReference)
   }, [selectedReference])
   return (
     <main>

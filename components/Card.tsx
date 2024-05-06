@@ -19,7 +19,7 @@ export default function Card({
     selectedReference: referenceType | null
 }) {
     return(
-        <div className={`flex flex-row gap-4 p-4 rounded-md bg-slate-50 hover:bg-slate-100 border border-transparent ${selectedReference?.id == reference.id? 'bg-slate-100 border-slate-600': ''} items-center transition-all cursor-pointer`} onClick={(() => setSelectedReference(reference))}>
+        <div className={`flex flex-row gap-4 p-4 rounded-md bg-slate-50 hover:bg-slate-100 ${selectedReference && selectedReference.id == reference.id? 'bg-slate-200': ''} items-center transition-all cursor-pointer`} onClick={(() => setSelectedReference(reference))}>
             <div className="flex aspect-square">
                 <FaCity className="text-9xl text-gray-600"/>
             </div>
