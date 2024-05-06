@@ -1,13 +1,12 @@
 'use client'
 
 import { useForm, SubmitHandler } from "react-hook-form";
-import InputMask from 'react-input-mask';
 import { IoAdd, IoSave, IoTrashBinOutline } from "react-icons/io5";
 import { useState, useRef, useEffect } from "react";
 import Card from "@/components/Card";
 import { referenceType } from "@/types";
 import { v4 as uuidv4 } from 'uuid'
-import { emailRegex, phoneRegex } from "@/lib/src/regex";
+import { emailRegex } from "@/lib/src/regex";
 import { useMask } from '@react-input/mask';
 
 
